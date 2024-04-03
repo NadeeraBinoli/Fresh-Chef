@@ -232,5 +232,17 @@ div.whiteback div div img{
 /* sectionHow */
 
 div.sectionHow{
-    
+    background-color: #fdf6e9; 
+    background-image: linear-gradient(#fdf6e9, #fdfbf9);
+    text-align: center;
+}
+
+div.sectionHow div.images{
+    display: flex;
+    flex-direction: row;
+}
+
+div.sectionHow div.images img{
+    width: 6rem;
+    height: 6rem;
 }
