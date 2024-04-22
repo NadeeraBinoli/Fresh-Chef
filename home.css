@@ -235,14 +235,49 @@ div.sectionHow{
     background-color: #fdf6e9; 
     background-image: linear-gradient(#fdf6e9, #fdfbf9);
     text-align: center;
+    padding: 4rem;
+}
+
+div.sectionHow div.text h2{
+    color: #FE724C;
+    font-size: 2.2rem;
+}
+
+div.sectionHow div.text p{
+     padding: 2rem 8rem;
 }
 
 div.sectionHow div.images{
     display: flex;
     flex-direction: row;
+    gap: 2rem;
 }
 
-div.sectionHow div.images img{
+div.sectionHow div.images img.how1,div.sectionHow div.images img.how3{
     width: 6rem;
     height: 6rem;
 }
+
+div.sectionHow div.images img.how2,div.sectionHow div.images img.how4{
+    width: 8rem;
+    height: 6rem;
+}
+
+div.sectionHow div.images h6{
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+div.sectionHow div.images p{
+    color: #9e9e9e;
+}
+
+div.sectionHow div.images div{
+    width: 18rem;
+
+}
+
+/* sectionPopularItems */
+
+
+/* sectionB */
