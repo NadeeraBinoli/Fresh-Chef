@@ -281,3 +281,37 @@ div.sectionHow div.images div{
 
 
 /* sectionB */
+
+div.sectionB{
+    display: flex;
+    text-align: center;
+    margin: 2rem auto;
+    width: 80%;
+    align-items:baseline ;
+}
+
+div.sectionB div.a {
+    align-items: center;
+    margin:auto;
+}
+
+
+div.sectionB div.a div.images{
+    background-color: #f5f5f5;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1.8rem;
+    display: flex; /* images centering */
+    justify-content: center;
+    align-items: center;
+}
+
+div.sectionB div.a p{
+    font-weight: 600;
+}
+
+/* sectionCatering */
+
+div.sectionCatering{
+    display: flex;
+}
