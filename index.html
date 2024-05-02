@@ -36,7 +36,7 @@
                     <form action="" method="post">
                         <i class="fa-solid fa-location-dot"></i>
                         <input class="location" type="text" id="location" name="location" placeholder="Enter Your Address">
-                        <button type="submit">
+                        <button class="heroButton" type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>Find Food
                         </button>
                     </form>
@@ -148,53 +148,91 @@
     </div>
     <div class="sectionCatering">
         <div class="text">
-            <h1>Let's ready to get our <span>CATERING</span> experience</h1>
-            <div>
-                <div>
-                    <div><p>01</p><hr></div>
-                    <div>
+            <h1>Let's ready to get our <br><span>CATERING</span> experience</h1>
+            <div class="main_text">
+                <div class="text_div">
+                    <div class="num_div"><p>01</p><hr></div>
+                    <div class="divTxt">
                         <h6>Choose a food menu for your function</h6>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Vero corporis eius autem ea repellendus voluptate quaerat</p>
                     </div>
                 </div>
-                <div>
-                    <div><p>02</p><hr></div>
-                    <div>
+                <div class="text_div">
+                    <div class="num_div"><p style="background-color:#ffc529;">02</p><hr></div>
+                    <div class="divTxt">
                         <h6>Customize your choices</h6>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Vero corporis eius autem ea repellendus voluptate quaerat</p>
                     </div>
                 </div>
-                <div>
-                    <div><p>03</p><hr></div>
-                    <div>
+                <div class="text_div">
+                    <div class="num_div"><p>03</p><hr></div>
+                    <div class="divTxt">
                         <h6>Online ordering and scheduling</h6>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Vero corporis eius autem ea repellendus voluptate quaerat</p>
                     </div>
                 </div>
-                <div>
-                    <div><p>04</p><hr></div>
-                    <div>
+                <div class="text_div">
+                    <div class="num_div"><p style="background-color:#ffc529;">04</p><hr></div>
+                    <div class="divTxt">
                         <h6>Responsible & Safety delivering</h6>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Vero corporis eius autem ea repellendus voluptate quaerat</p>
                     </div>
                 </div>
             </div>
-            <button>Book Now <i></i></button>
+            <button class="heroButton" onclick="location.href='#'">Book Now <i class="fa-solid fa-angle-right"></i></button>
         </div>
         <div class="image">
             <img src="homeIMG/catering_png.png" alt="">
         </div>
     </div>
     <div class="launching">
-
+        <div class="text">
+            <h2>Launching Soon!</h2>
+            <p>
+                It's never been easier to order food. Look for the finest discounts and you'll be lost in a world of delectable food.
+            </p>
+            <div class="button_div">
+                <a href="#"><i class="fa-brands fa-google-play" style="color: #FE724C;"></i><span class="fSpan">GET IT ON </span><span class="lSpan">Google Play</span></a>
+                <a href="#"><i class="fa-brands fa-apple" style="color: #FE724C;"></i><span class="fSpan">Download on the </span><span class="lSpan">App Store</span></a>
+            </div>
+        </div>
     </div>
     <div class="rating">
-
+        <div class="ratingContent">
+            <h2>Are you <span>HAPPY</span> about our food?</h2>
+            <p>Please comment about us</p>
+            <form action="">
+                <div class="ratingStars">
+                    <input type="number" name="rating" hidden>
+                    <i class="fa-regular fa-star" style="--i: 0;"></i> <!-- fa-solid -->
+                    <i class="fa-regular fa-star" style="--i: 1;"></i>
+                    <i class="fa-regular fa-star" style="--i: 2;"></i>
+                    <i class="fa-regular fa-star" style="--i: 3;"></i>
+                    <i class="fa-regular fa-star" style="--i: 4;"></i>
+                </div>
+                <input class="comment" type="text" id="comment" name="comment" placeholder="Write Your Comment">
+                <button class="heroButton" type="submit">
+                    Subscribe
+                </button>
+            </form>
+        </div>
     </div>
+    <di class="commentSection">
+        <div class="commentIntro">
+            <h2>We cook - they enjoy every minute of their <span></span> lives</h2>
+            <p>Because we...</p>
+            <div class="citationP">
+                <div class="citation">
+                    <img src="homeIMG/quote.png" alt="">
+                </div>
+                <p>We don't accept half-measures and shortcuts, because what we care about is the WOW effect. And all the luck that our efforts are not in vain. We know this because we closely follow the opinions of our consumers.</p>
+            </div>
+        </div>
+    </di>
     <div class="contact">
         <h2>+(94) 35 2229 540 | +(94) 76 2070 480</h2>
         <p>No 12, MainStreet, Kegalle,Sri Lanka</p>
@@ -245,5 +283,7 @@
             </div>
         </div>
     </footer>
+    <!-- java script -->
+    <script src="home.js"></script> 
 </body>
 </html>

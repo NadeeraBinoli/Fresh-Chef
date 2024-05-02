@@ -12,6 +12,11 @@ body{
     background-color: #fdfbfa;
 }
 
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+
 /* hero image */
 div.heroSection{
     width: 100%;
@@ -126,8 +131,8 @@ div.heroForm input.location{
     color: #9e9e9e;
 }
 
-div.heroForm button{
-    width: 25%;
+.heroButton{
+    width: 10rem;
     height: 3rem;
     padding: 1rem;
     margin-top: auto;
@@ -138,6 +143,7 @@ div.heroForm button{
     background-color: #FE724C;
     color: white;
     font-weight: 600;
+    cursor: pointer;
 }
 
 div.heroForm button i{
@@ -189,7 +195,7 @@ div.whiteback{
     margin-right: auto;
     margin-left: auto;
     margin-top: 3.4rem;
-    width: 50%;
+    width: 70%;
     padding: 2rem;
     height: 50%;
     position: relative;
@@ -314,4 +320,210 @@ div.sectionB div.a p{
 
 div.sectionCatering{
     display: flex;
+    margin: 8rem;
+    gap: 3rem;
+}
+
+div.sectionCatering div.text{
+    width: 50%;
+}
+
+div.sectionCatering div.image img{
+    width: 34.5rem
+}
+
+div.sectionCatering div.text h1 span{
+    color: #ffc529;
+}
+
+div.sectionCatering div.text i{
+    position: relative;
+    top: 2.5px;
+    margin: 1px;
+}
+
+div.sectionCatering div.text_div{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+div.sectionCatering div.num_div{
+    width: 25rem;
+    display: flex;
+}
+
+div.sectionCatering div.num_div p{
+    background-color: #FE724C;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5rem;
+}
+
+div.sectionCatering div.text hr {
+    display: block;
+    height: 1px;
+    width: 10rem;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    margin: 15px auto;
+}
+
+div.sectionCatering div.text h6{
+    font-size: 16px;
+}
+
+div.sectionCatering div.divTxt p{
+    font-size: 13px;
+    color: #9e9e9e;
+}
+
+/* launching section */
+
+div.launching{
+    background-image: url('homeIMG/Launching.png');
+    background-size: cover;
+    height: 480px;
+}
+
+div.launching div.text{
+    width: 40%;
+    position: relative;
+    left: 60%;
+    top: 30%;
+}
+
+div.launching div.text h2{
+    font-size: 48px;
+    color: #272c2f;
+    margin: 0 0 2rem 0 ;
+}
+
+div.launching div.text p{
+    font-size: 14px;
+    width: 70%;
+    margin-bottom: 1.5rem;
+}
+
+div.launching div.text div.button_div a{
+    width: 10rem;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    height: 3rem;
+    color: #9e9e9e;
+    font-weight: 500;
+    display: inline-block;
+    overflow: hidden;
+}
+
+div.launching div.text div.button_div a span.lSpan{
+    font-size: 18px;
+    color: black;
+    display: block;
+    position: relative;
+    top: -30px;
+    right: -50px;
+}
+
+div.launching div.text div.button_div a span.fSpan{
+    font-size: 12px;
+    display: block;
+    position: relative;
+    top: -30px;
+    right: -50px;
+}
+
+div.launching div.text a i.fa-google-play{
+    font-size: 2rem;
+    position: relative;
+    top: 10px;
+    right: -8px;
+}
+
+div.launching div.text a i.fa-apple{
+    font-size: 2rem;
+    position: relative;
+    top: 10px;
+    right: -8px;
+}
+
+/* section rating */
+
+div.rating{
+    background-image: url(homeIMG/rating.png);
+    height: 40rem;
+    margin: 0 1.8rem;
+    width: 95%;
+    background-size: auto;
+    overflow: hidden;
+}
+div.rating div.ratingContent{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 12rem auto;
+}
+
+div.rating h2{
+    font-size: 35px;
+}
+
+div.rating h2 span{
+    color: #FFC529;
+}
+
+div.rating div.ratingContent button{
+    background-color: #FFC529;
+    width: 8rem ;
+    margin-left: .5rem ;
+}
+
+div.rating div.ratingContent input{
+    background-color: #272c2f;
+    color: #ffff;
+    border: none;
+    width: 15rem;
+    height: 1.4rem;
+    border-radius: 5px ;
+    padding: .8rem;
+}
+
+div.rating div.ratingContent p{
+    margin: 1rem 0;
+}
+
+div.rating div.ratingContent div.ratingStars{
+    margin: 0 0 1.5rem;
+}
+
+div.rating div.ratingContent div.ratingStars .fa-star{
+    cursor: pointer;
+    color: #fe724c;
+}
+
+div.rating div.ratingContent div.ratingStars .fa-star:hover{
+    transform: scale(1.1);
+}
+
+div.rating div.ratingContent div.ratingStars .fa-star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
