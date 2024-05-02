@@ -11,8 +11,33 @@
     
 </head>
 <body>
-    <header>
-
+    <header id="header">
+        <div class="logo">
+            <img src="homeIMG/Logo.png" alt="">
+        </div>
+        <div class="navlinks">
+            <p><a href="index.html">home</a></p>
+            <p><a href="A_menu.html">menu</a></p>
+            <p><a href="menu.html">catering</a></p>
+            <p><a href="">delivery</a></p>
+            <p><a href="">about us</a></p>
+            <p><a href="">profile</a></p>
+        </div>
+        <div class="login">
+            <i class="fa-solid fa-lock"></i>
+            <p><a href="">Login</a></p>
+            <p>/</p>
+            <p><a href="">SignUp</a></p>
+            <div class="darkMode">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                  <i class="fa-solid fa-moon"></i>
+                  <i class="fa-solid fa-sun"></i>
+                  <span class="ball"></span>
+                </label>
+              </div>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
     </header>
     <div class="heroSection">
         <img class="leftTop" src="homeIMG/leftTop.png" alt="">
@@ -26,7 +51,7 @@
                 perspiciatis vel sequi est sapiente maxime vitae eaque asperiores 
                 recusandae? Blanditiis aut accusantium dolores consectetur, tenetur hic et eligendi quis eos.</p>
             </div>
-            <div class="heroForm">
+            <div class="heroForm" id="heroForm">
                 <div class="options">
                     <button><i class="fa-solid fa-motorcycle"></i>Delivery</button>
                     <button><i class="fa-solid fa-bag-shopping"></i>Pickup</button>
@@ -48,7 +73,7 @@
         <div class="overlay">
         </div>
     </div>
-    <div class="whiteback">
+    <div class="whiteback" id="whiteback">
         <div class="white">
             <div>
                 <img src="homeIMG/Icon1.png" alt="">
@@ -77,7 +102,7 @@
     <div class="sectionFreshDeals">
 
     </div>
-    <div class="sectionHow">
+    <div class="sectionHow" id="sectionHow">
         <div class="text">
             <h2>How does it work</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -116,31 +141,31 @@
     </div>
     <div class="sectionB">
         <div class="a">
-            <div class="images">
+            <div class="imagesB">
                 <img src="homeIMG/img1.png" alt="">
             </div>
             <p>Fresh ingredients</p>
         </div>
         <div class="a">
-            <div class="images">
+            <div class="imagesB">
                 <img src="homeIMG/img2.png" alt="">
             </div>
             <p>Taste</p>
         </div>
         <div class="a">
-            <div class="images">
+            <div class="imagesB">
                 <img src="homeIMG/img3.png" alt="">
             </div>
             <p>Diversity</p>
         </div>
         <div class="a">
-            <div class="images">
+            <div class="imagesB">
                 <img src="homeIMG/img4.png" alt="">
             </div>
             <p>Budget</p>
         </div>
         <div class="a">
-            <div class="images">
+            <div class="imagesB">
                 <img src="homeIMG/img5.png" alt="">
             </div>
             <p>Match</p>
@@ -201,7 +226,7 @@
             </div>
         </div>
     </div>
-    <div class="rating">
+    <div class="rating" id="rating">
         <div class="ratingContent">
             <h2>Are you <span>HAPPY</span> about our food?</h2>
             <p>Please comment about us</p>
@@ -221,9 +246,9 @@
             </form>
         </div>
     </div>
-    <di class="commentSection">
+    <div class="commentSection">
         <div class="commentIntro">
-            <h2>We cook - they enjoy every minute of their <span></span> lives</h2>
+            <h2>We cook - they enjoy every minute of their <span>&xrarr;</span> lives</h2>
             <p>Because we...</p>
             <div class="citationP">
                 <div class="citation">
@@ -232,15 +257,77 @@
                 <p>We don't accept half-measures and shortcuts, because what we care about is the WOW effect. And all the luck that our efforts are not in vain. We know this because we closely follow the opinions of our consumers.</p>
             </div>
         </div>
-    </di>
-    <div class="contact">
+        <div class="userComment">
+            <div class="comment">
+                <div class="starRates">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="commentLine">
+                    <h6>Nithya Gimhani</h6>
+                    <p>
+                        I absolutely love ordering from Fresh Chef! The food is always fresh and delicious, and the delivery is super fast. Highly recommended!
+                    </p>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="starRates">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="commentLine">
+                    <h6>Anonim</h6>
+                    <p>
+                        The customer service at Fresh Chef is top-notch. They always go above and beyond to make sure my orders are perfect and delivered on time.
+                    </p>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="starRates">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="commentLine">
+                    <h6>Damitha Nipun</h6>
+                    <p>
+                        I've been ordering from Fresh Chef for months now, and I've never been disappointed. The menu has a great variety of options, and everything I've tried has been amazing!
+                    </p>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="starRates">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="commentLine">
+                    <h6>Thusitha Perera</h6>
+                    <p>
+                        I appreciate how easy it is to order from Fresh Chef's website. The interface is user-friendly, and I love that I can track my order every step of the way.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contactSection">
         <h2>+(94) 35 2229 540 | +(94) 76 2070 480</h2>
         <p>No 12, MainStreet, Kegalle,Sri Lanka</p>
     </div>
     <footer>
-        <div class="main">
+        <div class="main" id="footer">
             <div class="address">
-                <img src="" alt="">
+                <img src="homeIMG/Logo.png" alt="logo">
                 <p>No 12, MainStreet, <br>
                 Kagalle (71000), <br>
                 Sri Lanka</p>
@@ -255,9 +342,12 @@
                     <p><a href="">profile</a></p>
                 </div>
                 <div class="sociallinks">
-                    <a href=""><i></i></a>
-                    <a href=""><i></i></a>
-                    <a href=""><i></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="coppyRights">
+                    <p>Policy privacy &nbsp; &nbsp; &nbsp; Copyright 2024. All rights reserved for Fresh Chef Catering</p>
                 </div>
             </div>
             <div class="contact">
@@ -275,8 +365,8 @@
                 </div>
                 <div class="form">
                     <form action="" method="post">
-                        <i></i>
-                        <input type="text" name="Enter Your email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Enter Your email">
                         <button type="submit"><img src="homeIMG/submit.png" alt=""></button>
                     </form>
                 </div>
