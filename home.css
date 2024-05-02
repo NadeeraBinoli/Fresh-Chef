@@ -14,7 +14,6 @@ body{
 
 a{
     text-decoration: none;
-    color: #ffff;
 }
 
 /* header */
@@ -327,7 +326,6 @@ div.whiteback div div img{
 /* sectionHow */
 
 div.sectionHow{
-    background-color: #fdf6e9; 
     background-image: linear-gradient(#fdf6e9, #fdfbf9);
     text-align: center;
     padding: 4rem;
@@ -391,7 +389,7 @@ div.sectionB div.a {
 }
 
 
-div.sectionB div.a div.images{
+div.sectionB div.a div.imagesB{
     background-color: #f5f5f5;
     width: 10rem;
     height: 10rem;
@@ -491,6 +489,7 @@ div.launching div.text h2{
 
 div.launching div.text p{
     font-size: 14px;
+    color: #272c2f;
     width: 70%;
     margin-bottom: 1.5rem;
 }
@@ -571,7 +570,7 @@ div.rating div.ratingContent button{
 }
 
 div.rating div.ratingContent input{
-    background-color: #272c2f;
+    background-color: #424242;
     color: #ffff;
     border: none;
     width: 15rem;
@@ -826,3 +825,29 @@ footer div.main div.contact div.form form button{
     cursor: pointer;
 }
 
+/* dark mode css */
+
+.darkBody{
+    background-color: #111112;
+    color: white;
+}
+
+.darkHeader{
+    background-color:#272c2f !important;
+}
+
+.darkAnchor{
+    color: white !important;
+}
+
+.darkRating{
+    background-image: url(homeIMG/darkRating.png) !important;
+}
+
+div.commentSection.darkMode div.userComment div.comment div.commentLine h6::after {
+    background-color: white;
+}
+
+.darkSectionHow{
+    background-image: linear-gradient(#352f23, #1c1b19)!important;
+}
