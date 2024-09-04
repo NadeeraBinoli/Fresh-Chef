@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin-left: 50px;
+}
+
+/* HTML Section code  */
+
+
+.product_page_container{
+    display: flex;
+
+}
+.product_tab_container{
+    background-color: #ffffff;
+    width: 20%;
+    height: auto;
+}
+.product_content_container{
+    background-color: #f3f2f7;
+    width: 80%;
+    height: auto;
+}
+
+
+
+/* Admin panal tags section */
+
+.product_tab_container img{
+    width: 200px;
+    height: 100px;
+    margin: 50px 0 0 50px;
+}
+.product_tab_container h4{
+    margin: 10px 0 0 50px;
+}
+.product_tab_container .admin_tabs{
+   margin-top: 50px;
+}
+.product_tab_container .admin_tabs button{
+    width: 200px;
+    height: 50px;
+    margin: 0 0 10px 50px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.div-tab{
+    display: flex;
+    width: 200px;
+    height: 30px;
+}
+.div-tabText{
+    width: 100px;
+    margin: 5px 0 0 30px
+}
+.div-tabIMG img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    
+}
+.product_tab_container .admin_tabs .active-btn{
+    color: #00b074;
+    background-color: #d9f3ea;
+    border-radius: 10px;
+    border: none;
+}
+.Green-div{
+    width: 275px;
+    height: 170px;
+    margin: 50px 0 0 5px;
+    background-color: #00b074;
+    display: flex;
+    border-radius: 10px;
+
+}
+.green-div-content p{
+    width: 150px;
+    height: auto;
+    margin: 20px 0 20px 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.green-div-content button{
+    width: 100px;
+    height: 30px;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 20px 0px 20px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.green-div-img img{
+    width: 70px;
+    height: 100px;
+    margin: 20px 20px 20px 10px;
+}
+.div-copyright h5{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.div-copyright p{
+    margin-left: 5px;
+    margin-top: -10px;
+    font-size: 10px;
+}
+
+
+/* search bar section */
+
+.search-tabs-container{
+    display: flex;
+    margin: 30px 0 0 50px;
+}
+.search-bar{
+    width: 700px;
+}
+.search-bar input{
+    width: 650px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.search-bar button{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-top: -40px;
+    cursor: pointer;
+    margin-left: 600px;
+
+    
+}
+
+.search-tabs-icons{
+    display: flex;
+    gap: 20px;
+}
+.icon-noti-value img{
+    width: 40px;
+    height: 40px;
+}
+
+.vertical-divbar{
+    width: 1px;
+    height: 50px;
+    background-color: #686767;
+    margin: 0 20px 0 20px;
+}
+.user-indicator{
+    display: flex;
+}
+.user-indicator span{
+    font-weight: bolder;
+    color: #000000;
+}
+.user-indicator .image-div{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.user-indicator .image-div img{
+    width: 50px;
+    height: 50px;
+    margin: 5px ;
+    border-radius: 50%;
+    
+    
+}
+/* Recent Order details */
+.Order_container{
+    position: relative;
+    margin-top: 10px;
+}
+.orderHeader{
+    display: flex;
+}
+.O_H_Action button{
+    background-color: #00b074;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-left: 815px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.O_H_Action i{
+    margin-right: 10px;
+}
+.box{
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 5px));
+    display: grid;
+    margin-bottom: 50px;
+}
+
+.user_review{
+    margin: 10px 0px 10px 50px ;
+    width: 270px;
+    height: 275px;
+    border-radius: 10px;
+    background-color: #fff;    
+}
+
+.user_review p{
+    margin-left: 10px;
+    color: #706e6e;
+    font-size: 14px;
+    font-weight: bold;
+    
+    
+}
+.user_review label{
+    color: #4e7edf;
+    font-size: 16px;
+    font-weight: bold;
+}
+.user_review span{
+    color: #de1b09;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.U_R_Card{
+    display: flex;
+}
+.U_R_ID{
+    background-color: #00b074;
+    border-radius: 10px 0 0 0;
+    width: 150px;
+}
+.U_R_ID p{
+    margin-left: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.U_R_ID span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.U_R_O_ID{
+    background-color: #fe724c;
+    border-radius: 0 10px 0 0;
+    width: 150px;
+}
+.U_R_O_ID span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    
+    
+}
+.O_D_div{
+    background-color: #d9f3ea;
+    width:270px;
+    height: 30px;
+}
+.O_D_div p{
+    color: #000000;
+    font-size: 14px;
+    font-weight:bold;
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 170    px;
+    
+}
+.O_A_bar{
+    display: flex;
+    margin-left: 50px;
+    background-color:#d6e5f3;
+    width: 270px;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+}
+.O_Action{
+    display: flex;
+}
+.O_Action button{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-color:#00b074;
+    border: solid 3px #00b074;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.O_status{
+    background-color: #00b074;
+    width: 130px;
+    height: 100px;
+    margin-left: 10px;
+    border: #fff solid 5px;
+    border-radius: 10px;
+    margin-top: -30px;
+
+}
+.O_status span{
+    margin-left: 18px;
+    margin-top: 30px;
+    display: block;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fff;
+    
+}
+
+/* tables */
+table{
+    border-collapse: collapse;
+    text-align: center;
+    border-spacing: none;
+    width: 1100px;
+    height: 50px;
+    margin: 50px;
+  }
+  
+   tr{
+    background-color:#01b075 ;
+    width: 1000px;
+    color: #ffffff;
+    line-height: 75px;
+    
+    
+    
+    
+  }
+  td{
+    background-color: #ffffff;
+    color: black;
+    line-height: 50px;
+    font-size: 14px;
+  }
+  
+  .operation{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 50px;
+    gap: 10px;
+    width: 100px;
+    
+  }
+ 

@@ -2,19 +2,44 @@
 <html>
 
 <head>
-    <title>Menu Page</title>
+    <title>Fresh Chef</title>
+    <link rel="icon" type="image/png" href="A_IMG/favicon.png">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<!-- font awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 
 <body>
 
-    <!-- header section -->
-    
-        <div class="Header">
-
+    <header id="header">
+        <div class="logo">
+            <a href="landing.html"><img src="homeIMG/Logo.png" alt="Logo" class="logo"></a>
         </div>
+        <div class="navlinks">
+            <p><a href="landing.html">home</a></p>
+            <p><a href="A_menu.php">menu</a></p>
+            <p><a href="menu.html">catering</a></p>
+            <p><a href="Delivary.html">delivery</a></p>
+            <p><a href="about.html">about us</a></p>
+            <p><a href="customer_profile.php">profile</a></p>
+        </div>
+        <div class="login">
+            <i class="fa-solid fa-lock"></i>
+            <p><a href="login.html">Login</a></p>
+            <p>/</p>
+            <p><a href="register.html">SignUp</a></p>
+            <div class="darkMode">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                  <i class="fa-solid fa-moon"></i>
+                  <i class="fa-solid fa-sun"></i>
+                  <span class="ball"></span>
+                </label>
+              </div>
+            <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
 
 
 
@@ -215,10 +240,6 @@
 
         </div>
 
-        <div class="view_more">
-            <button><b>View All ></b></button>
-        </div>
-
 
         <!-- section two -->
 
@@ -304,7 +325,7 @@
             </div>
             <div class="meal_container">
                 <div class="meal_card">
-                    <img src="IMG/dish2.png" alt="">
+                    <img src="IMG/dish5.png" alt="">
                     <span><b>Special</b></span>
 
                     <div class="rating">
@@ -335,7 +356,7 @@
             
             <div class="meal_container">
                 <div class="meal_card">
-                    <img src="IMG/dish3.png" alt="">
+                    <img src="IMG/dish7.png" alt="">
                     <span><b>Special</b></span>
 
                     <div class="rating">
@@ -366,7 +387,7 @@
             
             <div class="meal_container">
                 <div class="meal_card">
-                    <img src="IMG/dish4.png" alt="">
+                    <img src="IMG/dish9.png" alt="">
                     <span><b>Special</b></span>
 
                     <div class="rating">
@@ -429,7 +450,7 @@
             </div>
             <div class="meal_container">
                 <div class="meal_card">
-                    <img src="IMG/dish6.png" alt="">
+                    <img src="IMG/dish5.png" alt="">
                     <span><b>Special</b></span>
 
                     <div class="rating">
@@ -491,7 +512,7 @@
             
             <div class="meal_container">
                 <div class="meal_card">
-                    <img src="IMG/dish8.png" alt="">
+                    <img src="IMG/dish5.png" alt="">
                     <span><b>Special</b></span>
 
                     <div class="rating">
@@ -569,11 +590,55 @@
 
 
 
-        <!-- Footer -->
-
-        <div class="footer">
-
-        </div>
+        <footer>
+            <div class="main" id="footer">
+                <div class="address">
+                    <img src="homeIMG/Logo.png" alt="logo">
+                    <p>No 12, MainStreet, <br>
+                    Kagalle (71000), <br>
+                    Sri Lanka</p>
+                </div>
+                <div class="links">
+                    <div class="navlinks">
+                        <p><a href="landing.html">home</a></p>
+                        <p><a href="A_menu.php">menu</a></p>
+                        <p><a href="menu.html">catering</a></p>
+                        <p><a href="Delivary.html">delivery</a></p>
+                        <p><a href="about.html">about us</a></p>
+                        <p><a href="customer_profile.php">profile</a></p>
+                    </div>
+                    <div class="sociallinks">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="coppyRights">
+                        <p>Policy privacy &nbsp; &nbsp; &nbsp; Copyright 2024. All rights reserved for Fresh Chef Catering</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contactp">
+                        <div class="divp">
+                            <p>Contact : </p>
+                        </div>
+                        <div class="Pnum">
+                            <p>+(94) 35 2229 540</p>
+                            <p>+(94) 76 2070 480</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <p>hello@freshchef.com</p>
+                    </div>
+                    <div class="form">
+                        <form action="" method="post">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Enter Your email">
+                            <button type="submit"><img src="homeIMG/submit.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
         

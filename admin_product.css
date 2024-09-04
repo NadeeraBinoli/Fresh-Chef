@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+
+.ADMIN_PRODUCT_content{
+    display: flex;
+}
+.product_content{
+    width: auto;
+    background-color: #FE724C;
+}
+
+
+/* Adding products */
+
+.message{
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-left: 200px;
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #FE724C;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.message p{
+    margin-left: 125px;
+}
+.message_close{
+    margin-left: 100px;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.message_close:hover{
+    color: black;
+
+}
+
+/* adding product form */
+.add_product_form_container{
+    margin-top: 50px;
+    height: 500px;
+    width: 500px;
+    margin-left: 100px;
+    
+    
+}
+
+
+.add_product_form_container .input_field input{
+    margin-left: 30px;
+    width: 500px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid #FE724C 3px;
+}
+.add_product_form_container .input_field label{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.add_btn{
+    width: 200px;
+    height: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    background-color: #FE724C;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.input_field{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.input_fields{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.input_fields label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.input_fields input{
+    margin-top: 20px;
+}
+
+/* show product section */
+
+.show_products{
+    position: relative;
+    margin-top: 100px;
+
+}
+.show_products h2{
+    margin-left: 100px;
+}
+
+.box_container{
+    display: flex;
+    gap: 30px;
+    margin-left: 120px;
+    flex: 1;
+    flex-wrap: wrap;
+    
+}
+.box_container .box{
+    margin-top: 20px;
+
+}
+.box_container .box img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+.box_container .box .admin_O_btn .O_btn{
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FE724C;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+/* update prdocut details in database */
+.update_container{
+    margin-left: 100px;
+    margin-top: 100px;
+    display: block;
+}
+.update_prodcut_box .update_container img{
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    
+}
+.update_prodcut_box .update_container form{
+    width: 600px;
+    height: 600px;
+}
+.update_prodcut_box .update_container .input_field input{
+    width: 500px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid #FE724C 3px;
+    padding-left: 10px;
+
+
+}
+.update_container .input_fields2 input{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.update_container .edit{
+    width: 200px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #FE724C;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+} 
+.update_container .O_btn{
+    width: 200px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #FE724C;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

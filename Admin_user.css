@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin-left: 50px;
+}
+
+/* HTML Section code  */
+
+
+.product_page_container{
+    display: flex;
+
+}
+.product_tab_container{
+    background-color: #ffffff;
+    width: 20%;
+    height: auto;
+}
+.product_content_container{
+    background-color: #f3f2f7;
+    width: 80%;
+    height: auto;
+}
+
+
+
+/* Admin panal tags section */
+
+.product_tab_container img{
+    width: 200px;
+    height: 100px;
+    margin: 50px 0 0 50px;
+}
+.product_tab_container h4{
+    margin: 10px 0 0 50px;
+}
+.product_tab_container .admin_tabs{
+   margin-top: 50px;
+}
+.div-tab{
+    display: flex;
+    width: 200px;
+    height: 30px;
+}
+.div-tabText{
+    width: 100px;
+    margin: 5px 0 0 30px
+}
+.div-tabIMG img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    
+}
+.product_tab_container .admin_tabs button{
+    width: 200px;
+    height: 50px;
+    margin: 0 0 10px 50px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product_tab_container .admin_tabs .active-btn{
+    color: #00b074;
+    background-color: #d9f3ea;
+    border-radius: 10px;
+    border: none;
+} 
+
+.Green-div{
+    width: 275px;
+    height: 170px;
+    margin: 50px 0 0 5px;
+    background-color: #00b074;
+    display: flex;
+    border-radius: 10px;
+
+}
+.green-div-content p{
+    width: 150px;
+    height: auto;
+    margin: 20px 0 20px 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.green-div-content button{
+    width: 100px;
+    height: 30px;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 20px 0px 20px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.green-div-img img{
+    width: 70px;
+    height: 100px;
+    margin: 20px 20px 20px 10px;
+}
+.div-copyright h5{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.div-copyright p{
+    margin-left: 5px;
+    margin-top: -10px;
+    font-size: 10px;
+}
+
+
+/* search bar section */
+
+.search-tabs-container{
+    display: flex;
+    margin: 30px 0 0 50px;
+}
+.search-bar{
+    width: 700px;
+}
+.search-bar input{
+    width: 650px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.search-bar button{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-top: -40px;
+    cursor: pointer;
+    margin-left: 600px;
+
+    
+}
+
+.search-tabs-icons{
+    display: flex;
+    gap: 20px;
+}
+.icon-noti-value img{
+    width: 40px;
+    height: 40px;
+}
+
+.vertical-divbar{
+    width: 1px;
+    height: 50px;
+    background-color: #686767;
+    margin: 0 20px 0 20px;
+}
+.user-indicator{
+    display: flex;
+}
+.user-indicator span{
+    font-weight: bolder;
+    color: #000000;
+}
+.user-indicator .image-div{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.user-indicator .image-div img{
+    width: 50px;
+    height: 50px;
+    margin: 5px ;
+    border-radius: 50%;
+    
+    
+}
+
+.userAcccontainer{
+    display: flex;
+
+}
+.O_H_Action button{
+    background-color: #00b074;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-left: 815px;
+    margin-top: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.O_H_Action i{
+    margin-right: 10px;
+}
+
+/* Add user popup */
+.popup {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 1000px;
+    max-height: fit-content;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* input user from */
+
+.U-popup form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin-left: 50px;
+}
+
+.U-popup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.U-popup input[type="text"],
+input[type="email"  ] {
+    width: 700px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.U-popup input[type="submit"] {
+    background-color: #01b075;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.U-popup input[type="submit"]:hover {
+    background-color: #01b075;
+}
+
+/* tables */
+table{
+    border-collapse: collapse;
+    text-align: center;
+    border-spacing: none;
+    width: 1100px;
+    height: 50px;
+    margin: 50px;
+  }
+  
+   tr{
+    background-color:#01b075 ;
+    width: 1000px;
+    color: #ffffff;
+    line-height: 75px;
+    
+    
+    
+    
+  }
+  td{
+    background-color: #ffffff;
+    color: black;
+    line-height: 50px;
+    font-size: 14px;
+  }
+  
+  .operation{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    gap: 10px;
+    width: 100px;
+    
+  }
+ 
+
+
+  

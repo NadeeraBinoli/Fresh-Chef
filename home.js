@@ -55,3 +55,16 @@ if (commentSection.classList.contains("darkMode")) {
 }
 document.getElementById("sectionHow").classList.toggle("darkSectionHow");
 })
+
+
+// hero form
+
+document.getElementById('deliveryAddress').addEventListener('click', function() {
+	document.getElementById('location').value = '';
+	document.getElementById('location').placeholder = 'Enter Your Delivery Address';
+});
+
+document.getElementById('pickupAddress').addEventListener('click', function() {
+	document.getElementById('location').value = 'No 12, MainStreet, Kagalle (71000), Sri Lanka';
+	document.getElementById('location').placeholder = 'Enter Pickup Location';
+});
