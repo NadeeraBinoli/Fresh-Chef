@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+font-family: "Inter", sans-serif;
+   margin: 0;
+  padding: 0;
+  display: flex;
+    background-color: #202227;
+	background-size:cover;
+}
+.eye-icon {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+    cursor: pointer;
+	align-items:center;
+}
+
+.container {
+   width: 468px;
+   height: 452px;
+   position: absolute;
+   top: 90px;
+   left: 82;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 0;
+   padding: 20px;
+   box-sizing: border-box;
+   border-radius: 5px;
+   align-items:center;
+}
+
+.logo {
+   margin: .6rem 4.5rem;
+}
+
+.main-photo img {
+	width: 100%;
+	height: 100%;
+}
+.main-photo {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.registration-form {
+    width: 100%;
+    margin-left: 100px;
+    color: white;
+}
+
+.registration-form h2 {
+    width: 247px;
+    height: 48px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+} 
+.icon {
+	width: 35px;                                             
+	height: 44px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid  #272C2F;
+    box-sizing: border-box;
+    background-color: #272C2F;
+    color: #fff;
+}
+
+.form-group input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.form-group label[for="terms"] {
+    display: inline;
+    color: #fff;
+}
+
+button[type="submit"],
+button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FE724C;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h3{
+    margin: 8px 0;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color:  #272C2F;
+}
+.password-wrapper {
+    position: relative;
+}
+.registration-form .form-group {
+    position: relative;
+}
+
+.registration-form .form-group .eye-icon {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+	padding:10%;
+}

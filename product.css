@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #fff;
+}
+
+/* HTML Section code  */
+
+
+.product_page_container{
+    display: flex;
+
+}
+.product_tab_container{
+    background-color: #ffffff;
+    width: 20%;
+    height: auto;
+}
+.product_content_container{
+    background-color: #F3F2F7;
+    width: 80%;
+    height: auto;
+}
+
+.product_content_container h1{
+    margin-left: 50px;
+}
+
+/* Admin panal tags section */
+
+.product_tab_container img{
+    width: 200px;
+    height: 100px;
+    margin: 50px 0 0 50px;
+}
+.product_tab_container h4{
+    margin: 10px 0 0 50px;
+}
+.product_tab_container .admin_tabs{
+   margin-top: 50px;
+}
+.div-tab{
+    display: flex;
+    width: 200px;
+    height: 30px;
+}
+.div-tabText{
+    width: 100px;
+    margin: 5px 0 0 30px
+}
+.div-tabIMG img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    
+}
+.product_tab_container .admin_tabs button{
+    width: 200px;
+    height: 50px;
+    margin: 0 0 10px 50px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product_tab_container .admin_tabs .active-btn{
+    color: #00b074;
+    background-color: #d9f3ea;
+    border-radius: 10px;
+    border: none;
+} 
+
+.Green-div{
+    width: 275px;
+    height: 170px;
+    margin: 50px 0 0 5px;
+    background-color: #00b074;
+    display: flex;
+    border-radius: 10px;
+
+}
+.green-div-content p{
+    width: 150px;
+    height: auto;
+    margin: 20px 0 20px 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.green-div-content button{
+    width: 100px;
+    height: 30px;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 20px 0px 20px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.green-div-img img{
+    width: 70px;
+    height: 100px;
+    margin: 20px 20px 20px 10px;
+}
+.div-copyright h5{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.div-copyright p{
+    margin-left: 5px;
+    margin-top: -10px;
+    font-size: 10px;
+}
+
+/* product content section */
+
+
+/* adding product form */
+.add_product_form_container{
+    margin-top: 50px;
+    height: 600px;
+    width: 500px;
+    margin-left: 300px;
+    
+    
+}
+
+
+.add_product_form_container .input_field input{
+    margin-left: 30px;
+    width: 500px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid #a9a5a5 3px;
+}
+.add_product_form_container .input_field select{
+    margin-left: 30px;
+    width: 500px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid #a9a5a5 3px;
+}
+.add_product_form_container .input_field label{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.add_btn{
+    width: 200px;
+    height: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    background-color: #00b074;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.input_field{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.input_fields{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.input_fields label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.input_fields input{
+    margin-top: 20px;
+}
+.AddProductdiv{
+    display: flex;
+}
+.AddProductdiv button{
+    background-color: #00b074;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 650px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+/* popup */
+/* Popup overlay */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: fit-content;
+    max-height: 1000px;
+}
+
+/* Close button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* show product section */
+
+.show_products{
+    position: relative;
+    margin-top: 30px;
+
+}
+.show_products h2{
+    margin-left: 100px;
+}
+.ProductAddingCon{
+    display: flex;
+}
+
+.box_container{
+    display: flex;
+    gap: 30px;
+    margin-left: 120px;
+    flex: 1;
+    flex-wrap: wrap;
+    
+}
+.box_container .box{
+    margin-top: 20px;
+
+}
+.box_container .box img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+.box_container .box .admin_O_btn .O_btn{
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00b074;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+
+
+/* update prdocut details in database */
+
+.U_from_container{
+    width: 600px;
+    height: 625px;
+    background-color: #bbb4b4;
+    margin: 0 0 0 50px;
+    border-radius: 10px;
+}
+.update_container img{
+    width: 300px;
+    height: 300px;
+    margin: 20px 0px 0px 150px;
+}
+.input_imageHolder input{
+    width: 400px;
+    height: 30px;
+    margin: 20px 0px 10px 100px;
+}
+.input_container .input_feild input{
+    width: 400px;
+    height: 40px;
+    margin: 10px 0px 10px 100px;
+    border: solid #FE724C 2px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+.input_container .input_feild select{
+    width: 400px;
+    height: 40px;
+    margin: 10px 0px 10px 100px;
+    border: solid #FE724C 2px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.U_btn input{
+    width: 220px;
+    height: 30px;
+    color: #fff;
+    background-color: #FE724C;
+    border-radius: 10px;
+    border: none;
+    margin: 0px 0px 20px 50px;
+    cursor: pointer;
+}
+
+/* search bar section */
+
+.search-tabs-container{
+    display: flex;
+    margin: 30px 0 0 50px;
+}
+.search-bar{
+    width: 700px;
+}
+.search-bar input{
+    width: 650px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.search-bar button{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-top: -40px;
+    cursor: pointer;
+    margin-left: 600px;
+
+    
+}
+
+.search-tabs-icons{
+    display: flex;
+    gap: 20px;
+}
+.icon-noti-value img{
+    width: 40px;
+    height: 40px;
+}
+
+.vertical-divbar{
+    width: 1px;
+    height: 50px;
+    background-color: #686767;
+    margin: 0 20px 0 20px;
+}
+.user-indicator{
+    display: flex;
+}
+.user-indicator span{
+    font-weight: bolder;
+    color: #000000;
+}
+.user-indicator .image-div{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.user-indicator .image-div img{
+    width: 50px;
+    height: 50px;
+    margin: 5px ;
+    border-radius: 50%;
+    
+    
+}

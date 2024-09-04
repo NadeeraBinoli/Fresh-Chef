@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quantity {
+    display: flex;
+    border: 2px solid #bab9b9;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 120px;
+}
+
+.quantity button {
+    color: #fff;
+    background-color: #bab9b9;
+    cursor: pointer;
+    border: none;
+    width: 30px;
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.quantity button:hover {
+    background-color: #999898;
+}
+
+.input-box {
+    width: 40px;
+    text-align: center;
+    border: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-box[type="number"] {
+    
+    appearance: textfield;
+}
+
+h3{
+    color: #FE724C;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.cart-item label{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    bottom: 2.2rem;
+    left: 1.5rem;
+}
+
+.orderType{
+    display: flex;
+    gap: 2rem;
+    border: 3px solid #FE724C;
+    padding-left: 1rem;
+    /* width: 50%; */
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pickup, .delivery{
+    display: flex;
+    align-items: center;
+}
+
+.shipping-fee span{
+    font-weight: 800;
+}
+
+.subButton{
+    color: #fff;
+    background-color: black;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+    font-size: 28px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.subButton span{
+    padding-left: 5rem;
+}
+
+input,i{
+    cursor: pointer;
+}
+
+.i i{
+    color: #FE724C;
+}

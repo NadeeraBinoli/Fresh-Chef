@@ -1,0 +1,860 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #fdfbfa;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* header */
+header{
+    font-size: 15px;
+    display: flex;
+    gap: 5rem;
+    background-color: #f5f5f5;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+
+header div.logo img{
+    width: 8rem;
+}
+
+header div.navlinks a{
+    color: #111;
+    text-transform: uppercase;
+}
+
+header div.navlinks{
+    display: flex;
+    gap: 4rem;
+    padding-top: 2.5rem;
+}
+
+header div.login{
+    display: flex;
+    padding-top: 2.5rem;
+
+}
+
+header div.login a{
+    color: #111;
+}
+
+header div.login i.fa-lock{
+    padding: 0 5px;
+}
+
+header div.login i.fa-cart-shopping{
+    padding-left: 20px;
+}
+
+/* dark mode button start */
+header div.login div.darkMode {
+    padding-left: 1rem;
+    position: relative;
+    top: -5px;
+}
+
+header div.login div.darkMode .checkbox {
+    display: none;
+}
+
+header div.login div.darkMode .checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div.login div.darkMode .fa-moon {color: #f1c40f;}
+
+header div.login div.darkMode .fa-sun {color: #f39c12;}
+
+header div.login div.darkMode .checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+header div.login div.darkMode .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(33px);
+}
+/* dark mode button end*/
+
+/* hero image */
+div.heroSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+div.heroSection img{
+    position: absolute;
+
+}
+
+div.heroSection img.leftTop{
+    left: -60px;
+    width: 20rem;
+    height: 22rem;
+}
+
+div.heroSection img.rightTop{
+    right: -80px;
+    width: 15rem;
+    height: 12rem;
+    z-index: -10;
+}
+
+div.heroSection img.rightBottom{
+    right: -110px;
+    bottom: 0;
+    width: 22rem;
+    height: 20rem;
+}
+
+div.heroSection img.leftBottom{
+    left: -50px;
+    bottom: 0;
+    width: 18rem;
+    height: 15rem;
+}
+
+div.heroSection div.heroContent {
+    text-align: center;
+    margin: auto;
+    width: 863px;
+    height: 100vh;
+}
+
+div.heroText h1{
+    width: 800px;
+    margin: auto;
+    font-size: 56px;
+    padding: 1rem;
+}
+
+div.heroText h1 span{
+    color: #FFC529;
+}
+
+div.heroText p{
+    padding: 1rem;
+}
+
+div.heroForm{
+    border:none;
+    box-shadow: 0 0 5px 5px #ebebeb;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+hr{
+    background-color: #eeee;
+    height: 2px;
+    border: none;
+}
+
+div.heroForm div.options button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 15%;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffdecf;
+    color: #FE724C;
+    font-weight: 600;
+}
+
+div.heroForm div.options button:hover{
+    background-color: #FE724C;
+    color: white;
+}
+
+div.heroForm div.options button i{
+    margin-right: 10px;
+}
+
+div.heroForm div.options{
+    margin-left: 1rem;
+}
+
+div.heroForm input.location{
+    width: 70%;
+    padding-left: 3rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+.heroButton{
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #FE724C;
+    color: white;
+    font-weight: 600;
+}
+
+div.heroForm button i{
+    padding-right: 6px;
+}
+
+div.form i.fa-location-dot{
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #FE724C;
+    width: 1rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+div.form form{
+    display: flex;
+    flex-direction: row;
+}
+
+/* sectionA */
+
+div.sectionA{
+    background-image: url("homeIMG/cover1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+
+}
+
+div.sectionA div.overlay{
+    background-color: #FFC529;
+    opacity: 54%;
+    width: 100%;
+    height: 20rem;
+}
+
+div.whiteback{
+    background-color: #ffff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3.4rem;
+    width: 70%;
+    padding: 2rem;
+    height: 50%;
+    position: relative;
+    bottom:300px;
+    display: flex;
+    border-radius: 20px;
+}
+
+div.whiteback div{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 1rem;
+}
+
+div.whiteback div.white::after{
+    content: "";
+    width: 5px;
+    height: 5rem;
+    background-color: #ffc529;
+}
+
+div.whiteback div p{
+    color: #fe724c;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+div.whiteback div div img{
+    margin: 1rem;
+    min-width: 5rem;
+    max-width: 5rem;
+}
+
+/* sectionFreshDeals */
+
+
+
+/* sectionHow */
+
+div.sectionHow{
+    background-image: linear-gradient(#fdf6e9, #fdfbf9);
+    text-align: center;
+    padding: 4rem;
+}
+
+div.sectionHow div.text h2{
+    color: #FE724C;
+    font-size: 2.2rem;
+}
+
+div.sectionHow div.text p{
+     padding: 2rem 8rem;
+}
+
+div.sectionHow div.images{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+div.sectionHow div.images img.how1,div.sectionHow div.images img.how3{
+    width: 6rem;
+    height: 6rem;
+}
+
+div.sectionHow div.images img.how2,div.sectionHow div.images img.how4{
+    width: 8rem;
+    height: 6rem;
+}
+
+div.sectionHow div.images h6{
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+div.sectionHow div.images p{
+    color: #9e9e9e;
+}
+
+div.sectionHow div.images div{
+    width: 18rem;
+
+}
+
+/* sectionPopularItems */
+
+
+/* sectionB */
+
+div.sectionB{
+    display: flex;
+    text-align: center;
+    margin: 2rem auto;
+    width: 80%;
+    align-items:baseline ;
+}
+
+div.sectionB div.a {
+    align-items: center;
+    margin:auto;
+}
+
+
+div.sectionB div.a div.imagesB{
+    background-color: #f5f5f5;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1.8rem;
+    display: flex; /* images centering */
+    justify-content: center;
+    align-items: center;
+}
+
+div.sectionB div.a p{
+    font-weight: 600;
+}
+
+/* sectionCatering */
+
+div.sectionCatering{
+    display: flex;
+    margin: 8rem;
+    gap: 3rem;
+}
+
+div.sectionCatering div.text{
+    width: 50%;
+}
+
+div.sectionCatering div.image img{
+    width: 34.5rem
+}
+
+div.sectionCatering div.text h1 span{
+    color: #ffc529;
+}
+
+div.sectionCatering div.text i{
+    position: relative;
+    top: 2.5px;
+    margin: 1px;
+}
+
+div.sectionCatering div.text_div{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+div.sectionCatering div.num_div{
+    width: 25rem;
+    display: flex;
+}
+
+div.sectionCatering div.num_div p{
+    background-color: #FE724C;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5rem;
+}
+
+div.sectionCatering div.text hr {
+    display: block;
+    height: 1px;
+    width: 10rem;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    margin: 15px auto;
+}
+
+div.sectionCatering div.text h6{
+    font-size: 16px;
+}
+
+div.sectionCatering div.divTxt p{
+    font-size: 13px;
+    color: #9e9e9e;
+}
+
+/* launching section */
+
+div.launching{
+    background-image: url('homeIMG/Launching.png');
+    background-size: cover;
+    height: 480px;
+}
+
+div.launching div.text{
+    width: 40%;
+    position: relative;
+    left: 60%;
+    top: 30%;
+}
+
+div.launching div.text h2{
+    font-size: 48px;
+    color: #272c2f;
+    margin: 0 0 2rem 0 ;
+}
+
+div.launching div.text p{
+    font-size: 14px;
+    color: #272c2f;
+    width: 70%;
+    margin-bottom: 1.5rem;
+}
+
+div.launching div.text div.button_div a{
+    width: 10rem;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    height: 3rem;
+    color: #9e9e9e;
+    font-weight: 500;
+    display: inline-block;
+    overflow: hidden;
+}
+
+div.launching div.text div.button_div a span.lSpan{
+    font-size: 18px;
+    color: black;
+    display: block;
+    position: relative;
+    top: -30px;
+    right: -50px;
+}
+
+div.launching div.text div.button_div a span.fSpan{
+    font-size: 12px;
+    display: block;
+    position: relative;
+    top: -30px;
+    right: -50px;
+}
+
+div.launching div.text a i.fa-google-play{
+    font-size: 2rem;
+    position: relative;
+    top: 10px;
+    right: -8px;
+}
+
+div.launching div.text a i.fa-apple{
+    font-size: 2rem;
+    position: relative;
+    top: 10px;
+    right: -8px;
+}
+
+/* section rating */
+
+div.rating{
+    background-image: url(homeIMG/rating.png);
+    height: 40rem;
+    margin: 0 1.8rem;
+    width: 95%;
+    background-size: auto;
+    overflow: hidden;
+}
+div.rating div.ratingContent{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 12rem auto;
+}
+
+div.rating h2{
+    font-size: 35px;
+}
+
+div.rating h2 span{
+    color: #FFC529;
+}
+
+div.rating div.ratingContent button{
+    background-color: #FFC529;
+    width: 8rem ;
+    margin-left: .5rem ;
+}
+
+div.rating div.ratingContent input{
+    background-color: #424242;
+    color: #ffff;
+    border: none;
+    width: 15rem;
+    height: 1.4rem;
+    border-radius: 5px ;
+    padding: .8rem;
+}
+
+div.rating div.ratingContent p{
+    margin: 1rem 0;
+}
+
+div.rating div.ratingContent div.ratingStars{
+    margin: 0 0 1.5rem;
+}
+
+div.rating div.ratingContent div.ratingStars .fa-star{
+    cursor: pointer;
+    color: #fe724c;
+}
+
+div.rating div.ratingContent div.ratingStars .fa-star:hover{
+    transform: scale(1.1);
+}
+
+div.rating div.ratingContent div.ratingStars .fa-star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/* commentSection */
+div.commentSection{
+    display: flex;
+    gap: 3rem;
+}
+
+div.commentSection div.commentIntro{
+    margin-left: 5rem;
+    width: 80%;
+}
+
+div.commentSection div.commentIntro h2{
+    font-size: 2.5rem;
+    margin-bottom: 6rem;
+}
+
+div.commentSection div.commentIntro h2 span{
+    font-size: 4rem;
+    font-weight: 10;
+    position: relative;
+    top: 10px;
+    line-height: 5px;
+    border-radius: 1rem;
+    height: 1rem;
+    width: 5.5rem;
+    display: inline-block;
+    background-color: #FFC529;
+    overflow: hidden;
+    padding: 10px;
+}
+
+div.commentSection div.commentIntro>p{
+    color: #9e9e9e;
+    margin-bottom: 2rem;
+}
+
+div.commentSection div.commentIntro div.citationP{
+    display: flex;
+}
+
+div.commentSection div.commentIntro div.citationP div.citation{
+    width: 4rem;
+    align-items: center;
+    display: flex;
+}
+
+div.commentSection div.commentIntro div.citationP p{
+    width: 80%;
+    text-align: justify;
+}
+
+div.commentSection div.userComment{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+div.commentSection div.userComment div.comment div.starRates{
+    color: #FFC529;
+}
+
+div.commentSection div.userComment div.comment div.commentLine{
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 120px;
+    width: 18rem;
+}
+div.commentSection div.userComment div.comment div.commentLine h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+div.commentSection div.userComment div.comment div.commentLine p{
+    color: #9e9e9e;
+    font-size: 14px;
+}
+
+div.commentSection div.userComment div.comment div.commentLine h6::after{
+    content: "";
+    display: inline-block;
+    position: relative;
+    right: -.5rem;
+    top: -.2rem;
+    width: 2rem;
+    height: 2px;
+    background-color: black;
+}
+
+/* contactSection */
+
+div.contactSection{
+    background-image: url(homeIMG/contact.png);
+    color: #ffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 5rem;
+}
+
+div.contactSection h2{
+    margin-bottom: .8rem;
+    font-size: 30px;
+}
+
+div.contactSection p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* footer */
+
+footer div.main{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    padding: 4rem 8rem 5rem;
+}
+
+footer div.main div.address img{
+    height: 4rem;
+    margin-bottom: 10px;
+}
+
+footer div.main div.links{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+footer div.main div.links a{
+    color: #111;
+    text-transform: uppercase;
+}
+
+footer div.main div.links div.navlinks{
+    display: flex;
+    gap: 4rem;
+}
+
+footer div.main div.links div.sociallinks{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-size: 18px;
+}
+
+footer div.main div.links div.coppyRights{
+    color: #9e9e9e;
+    font-size: 13px;
+    margin-top: 3rem;
+}
+
+footer div.main div.contact{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer div.main div.contact div.contactp{
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer div.main div.contact div.contactp div.divp{
+    color: #9e9e9e;
+}
+
+footer div.main div.contact div.contactp div.Pnum{
+    font-weight: 600;
+}
+
+footer div.main div.contact div.email{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer div.main div.contact div.form{
+    background-color: #d9d9d9;
+    padding: 5px;
+    max-width: 12rem;
+    color: #9e9e9e;
+    border-radius: 8px;
+}
+
+footer div.main div.contact div.form form i{
+    padding: 0 1rem;
+}
+
+footer div.main div.contact div.form form input{
+    background-color: #d9d9d9;
+    border: none;
+    width: 8rem;
+    font-size: 12px;
+}
+
+footer div.main div.contact div.form form button{
+    background-color: #d9d9d9;
+    border: none;
+    cursor: pointer;
+}
+
+/* dark mode css */
+
+.darkBody{
+    background-color: #111112;
+    color: white;
+}
+
+.darkHeader{
+    background-color:#272c2f !important;
+}
+
+.darkAnchor{
+    color: white !important;
+}
+
+.darkRating{
+    background-image: url(homeIMG/darkRating.png) !important;
+}
+
+div.commentSection.darkMode div.userComment div.comment div.commentLine h6::after {
+    background-color: white;
+}
+
+.darkSectionHow{
+    background-image: linear-gradient(#352f23, #1c1b19)!important;
+}

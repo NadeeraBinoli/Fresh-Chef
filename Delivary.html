@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fresh Chef</title>
+    <link rel="icon" type="image/png" href="A_IMG/favicon.png">
+    <link rel="stylesheet" href="Delivary.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <a href="landing.html"><img src="homeIMG/Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div class="navlinks">
+            <p><a href="landing.html">home</a></p>
+            <p><a href="A_menu.php">menu</a></p>
+            <p><a href="menu.html">catering</a></p>
+            <p><a href="Delivary.html">delivery</a></p>
+            <p><a href="about.html">about us</a></p>
+            <p><a href="customer_profile.php">profile</a></p>
+        </div>
+        <div class="login">
+            <i class="fa-solid fa-lock"></i>
+            <p><a href="login.html">Login</a></p>
+            <p>/</p>
+            <p><a href="register.html">SignUp</a></p>
+            <div class="darkMode">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                  <i class="fa-solid fa-moon"></i>
+                  <i class="fa-solid fa-sun"></i>
+                  <span class="ball"></span>
+                </label>
+              </div>
+            <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+
+
+    <!-- Hot & Fast Delivary -->
+
+    <div class="H_F_DeliveryContainer">
+        <div class="Delivary_content">
+            <h1>Hot & Fast Delivary</h1>
+            <p>See if we're delivering to you right now! Use the search engine by entering the postal code of your locality and see if we can deliver your order there.</p>
+
+
+            <form id="deliveryForm">
+                <div class="D_Phaseholders">
+                    <div class="holder_left">
+                        <input type="text" id="city" placeholder="City name" required>
+                    </div>
+                    <div class="holder_right">
+                        <input type="text" id="zip" placeholder="ZIP" required>
+                    </div>
+                </div>
+        
+                <div class="D_button">
+                    <button type="submit" class="D_right">Check</button>
+                    <button type="button" class="D_left"><img src="D_IMG/locate_img.png" alt=""><span>Locate me</span></button>
+                </div>
+            </form>
+        
+            <div style="margin-top: 2rem;" class="message" id="message"></div>
+        </div>
+        <div class="H_F_DeliveryContainer_img">
+            <img src="D_IMG/img1.png" alt="">
+        </div>
+        
+    </div>
+
+
+    <!-- Track the order -->
+
+
+            <div class="track_the_Order">
+                <h1>Track the Order</h1>   
+            </div>
+
+        <div class="track_the_OrderContainer">
+
+            <div class="Oder_Card">
+                <h2>Order<br>Confirmation</h2>
+                <img src="D_IMG/L_img1.png" alt="">
+                <div class="bar">
+                        <div class="progressbar">
+                            
+                        </div>
+                </div>
+            </div>
+
+            <div class="Oder_Card">
+                <h2>Order<br>Confirmation</h2>
+                <img src="D_IMG/L_img2.png" alt="">
+                <div class="bar">
+                        <div class="progressbar">
+                            
+                        </div>
+                </div>
+            </div>
+            <div class="Oder_Card">
+                <h2>Order<br>Confirmation</h2>
+                <img src="D_IMG/L_img4.png" alt="">
+                <div class="bar">
+                        <div class="progressbar">
+                            
+                        </div>
+                </div>
+            </div>
+            <div class="Oder_Card">
+                <h2>Order<br>Confirmation</h2>
+                <img src="D_IMG/L_img5.png" alt="">
+                <div class="bar">
+                        <div class="progressbar">
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- order Information -->
+
+        <div class="order_Information">
+            <h1>Order Information</h1>
+
+
+            <div class="O_I_contentcard">
+                <div class="O_I_T_left">
+                    <div class="O_I_T_left_content">
+                        <div class="O_I_imgcontent">
+                            <img src="D_IMG/O_img1.png" alt="">
+                            <p>Mmh! You are still not<br>get order.</p>
+                            <button onclick="location.href='menu.html'">Order Now</button>
+            
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="O_T_textcontent">
+                        <div class="O_T_content">
+                            <img src="D_IMG/oderimg.png" alt="">
+            
+                        </div>
+
+                        <div class="O_T_contenttext">
+                            <h5>Daily between <span>18:00</span> and <span>00:00</span></h5>
+                            <p>we only deliver to limited area yet. we hope to <br>
+                            upgrade is to islandwide soon.....<label>Click here</label></p>
+
+                        </div>
+                        
+                    </div>
+ 
+                    
+                </div>
+                
+    
+                <div class="O_I_T_right">
+                    <img src="D_IMG/O_img2.png" alt="">
+                </div>
+            </div>
+            
+
+            
+        </div>
+
+
+        <!-- Get dinning Experience -->
+
+        <div class="Get_dinning-container">
+            <div class="dining_img">
+                <img src="D_IMG/GET_img1.png" alt="">
+            </div>
+
+            <div class="dinning_content">
+                <h5>Do you like to</h5>
+                <h2><span>GET</span> <label>DINNING</label> Experince?</h2>
+                <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+                    To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+                    </p>
+                    <button><img src="D_IMG/getimg2.png" alt="">Visit to Outlet</button>
+            </div>
+        </div>
+
+        
+        <footer>
+            <div class="main" id="footer">
+                <div class="address">
+                    <img src="homeIMG/Logo.png" alt="logo">
+                    <p>No 12, MainStreet, <br>
+                    Kagalle (71000), <br>
+                    Sri Lanka</p>
+                </div>
+                <div class="links">
+                    <div class="navlinks">
+                        <p><a href="landing.html">home</a></p>
+                        <p><a href="A_menu.php">menu</a></p>
+                        <p><a href="menu.html">catering</a></p>
+                        <p><a href="Delivary.html">delivery</a></p>
+                        <p><a href="about.html">about us</a></p>
+                        <p><a href="customer_profile.php">profile</a></p>
+                    </div>
+                    <div class="sociallinks">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="coppyRights">
+                        <p>Policy privacy &nbsp; &nbsp; &nbsp; Copyright 2024. All rights reserved for Fresh Chef Catering</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contactp">
+                        <div class="divp">
+                            <p>Contact : </p>
+                        </div>
+                        <div class="Pnum">
+                            <p>+(94) 35 2229 540</p>
+                            <p>+(94) 76 2070 480</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <p>hello@freshchef.com</p>
+                    </div>
+                    <div class="form">
+                        <form action="" method="post">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Enter Your email">
+                            <button type="submit"><img src="homeIMG/submit.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+<script src="Delivary.js"></script>
+</html>
