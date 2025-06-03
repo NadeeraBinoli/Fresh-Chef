@@ -1,5 +1,8 @@
 # 🍽️ Fresh Chef – Food & Beverage Delivery and Catering System
 
+### 🏠 Homepage (Customer View)
+![Homepage Screenshot](./IMG/Screenshot 2025-06-04 004338.png)
+
 A full-stack web application developed as a group project for the Bachelor of Information Technology (Hons) program at ESOFT Metro Campus. **Fresh Chef** is designed to streamline online food ordering, delivery, and catering services for local restaurants, providing enhanced customer satisfaction and efficient operations.
 
 ---
